@@ -4,10 +4,10 @@ require_once('TwitterAPIExchange.php');
 
 /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
 $settings = array(
-    'oauth_access_token' => "",
-    'oauth_access_token_secret' => "",
-    'consumer_key' => "",
-    'consumer_secret' => ""
+    'oauth_access_token' => "593638675-VYsU5Z538rYUXgoMoBoCR6zVctJD0XKULP3A2kim",
+    'oauth_access_token_secret' => "feG35XbSuyyXchSSZVaVPyJV2GRyY9bosr7kRsGZoyeKD",
+    'consumer_key' => "kuuxjQlM1WdnceRwAqix2xfJI",
+    'consumer_secret' => "0nZkuJF2qgGd8B7RaQ6BagI7M7v6ClVwvAcA4LXKafqn2cL1tE"
 );
 
 /** URL for REST request, see: https://dev.twitter.com/docs/api/1.1/ **/
@@ -29,7 +29,7 @@ echo $twitter->buildOauth($url, $requestMethod)
 /** Perform a GET request and echo the response **/
 /** Note: Set the GET field BEFORE calling buildOauth(); **/
 $url = 'https://api.twitter.com/1.1/followers/ids.json';
-$getfield = '?screen_name=J7mbo';
+$getfield = '?screen_name=taylorswift';
 $requestMethod = 'GET';
 $twitter = new TwitterAPIExchange($settings);
 echo $twitter->setGetfield($getfield)
