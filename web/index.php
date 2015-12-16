@@ -28,7 +28,7 @@ echo $twitter->buildOauth($url, $requestMethod)
 
 /** Perform a GET request and echo the response **/
 /** Note: Set the GET field BEFORE calling buildOauth(); **/
-$url = 'https://api.twitter.com/1.1/followers/ids.json';
+$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
 $getfield = '?screen_name=sysu_2010';
 $requestMethod = 'GET';
 $twitter = new TwitterAPIExchange($settings);
