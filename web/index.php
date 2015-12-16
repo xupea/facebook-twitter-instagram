@@ -21,10 +21,10 @@ $postfields = array(
 );
 
 /** Perform a POST request and echo the response **/
-$twitter = new TwitterAPIExchange($settings);
+/*$twitter = new TwitterAPIExchange($settings);
 echo $twitter->buildOauth($url, $requestMethod)
              ->setPostfields($postfields)
-             ->performRequest();
+             ->performRequest();*/
 
 /** Perform a GET request and echo the response **/
 /** Note: Set the GET field BEFORE calling buildOauth(); **/
